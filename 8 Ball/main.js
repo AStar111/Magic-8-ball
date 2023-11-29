@@ -1,17 +1,12 @@
-// Functionize Minecraft Fishing Start Code
+// 8 Ball
 
-//HTML variables
-
-// Fish Count Variables
-
-// Fish Button Event Listener
 document.getElementById("magic8").addEventListener("click", Clicked);
-
+//Variables
 let OutputEl = document.getElementById("result");
-let work = document.getElementById("search").value.toLowerCase();
-
+let Search = document.getElementById("search").value.toLowerCase();
+let randNum = Math.random();
+//Funtions
 function Clicked() {
-  let randNum = Math.random();
   if (randNum < 0.2) {
     OutputEl.innerHTML = "Without a Doubt.";
   } else if (randNum < 0.4) {
@@ -23,16 +18,15 @@ function Clicked() {
   } else {
     OutputEl.innerHTML = "Outlook not so good.";
   }
+//Percise search function
 
-  let work = document.getElementById("search").value.toLowerCase();
-
-  if (work === "does a magic 8 ball actually work") {
+  if (Search === "does a magic 8 ball actually Search") {
     OutputEl.innerHTML = "How dare you doubt me";
   }
-  if (work === "is javascript awesome") {
+  if (Search === "is javascript awesome") {
     OutputEl.innerHTML = "Of Course";
   }
-  if (work === "whats the best class") {
+  if (Search === "whats the best class") {
     OutputEl.innerHTML = "Computor Science";
   }
 }
